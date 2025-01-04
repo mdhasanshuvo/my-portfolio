@@ -5,7 +5,7 @@ const Nav = () => {
     const menuItems = (
         <>
             <li>
-                <Link to="/" smooth={true} duration={500} className="cursor-pointer">
+                <Link to="home" smooth={true} duration={500} className="cursor-pointer">
                     Home
                 </Link>
             </li>
