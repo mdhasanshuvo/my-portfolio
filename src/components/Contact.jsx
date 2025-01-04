@@ -27,7 +27,7 @@ const Contact = () => {
 
     // Replace with your EmailJS credentials
     emailjs
-      .sendForm('your_service_id', 'your_template_id', e.target, 'your_user_id')
+      .sendForm('service_r5d4d88', 'template_r3nphi8', e.target, 'BBr-2VAVX6wsfuZyv4OYL')
       .then(
         (result) => {
           setStatus('Message Sent!');
@@ -40,13 +40,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-200 py-16 px-8">
-      <div className="max-w-6xl mx-auto">
+    <div id="contact" className="bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-200 py-16 sm:py-24 lg:py-32 px-8">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-center text-4xl font-bold text-gray-800 mb-10">Contact Me</h2>
 
         {/* Contact Form */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
           <motion.div
             className="bg-white p-8 rounded-lg shadow-xl"
             whileHover={{ opacity: 0.9 }}

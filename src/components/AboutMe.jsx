@@ -2,14 +2,14 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-purple-100 to-pink-200 text-gray-800 py-16 px-8">
-      <div className="max-w-6xl mx-auto">
+    <div id="about" className="bg-gradient-to-r from-blue-200 via-purple-100 to-pink-200 text-gray-800 py-16  sm:py-24 lg:py-32 px-8">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-center text-4xl font-bold mb-6">
           About Me
         </h2>
-        <p className="text-center text-lg md:text-xl leading-relaxed mb-10">
-          Hi! I’m <span className="text-blue-600 font-semibold">Mohammed Hasan</span>, a passionate web developer specializing in frontend and backend technologies. I love building dynamic, functional, and visually appealing web applications while brainstorming innovative ideas to solve real-world problems.
+        <p className="text-center text-lg md:text-xl leading-relaxed mb-10 w-9/12 mx-auto">
+          Hi! I’m <span className="text-blue-600 font-semibold">Mohammed Hasan</span>, a passionate web developer specializing in frontend. I love building dynamic, functional, and visually web applications while brainstorming innovative ideas to solve real-world problems.
         </p>
         
         {/* Info Sections */}

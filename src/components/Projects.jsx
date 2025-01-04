@@ -1,40 +1,43 @@
 import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import hotel from '../assets/hotel-website.png';
+import taalam from '../assets/taalam.png';
+import visa from '../assets/visa.png';
 
 const projects = [
     {
-        name: "Project One",
-        description: "A brief description of your first project goes here. It can include the tech stack used, project purpose, or special features.",
-        image: "https://via.placeholder.com/300x200", // Replace with your project image URL
-        liveLink: "https://your-live-project-link.com",
-        repoLink: "https://github.com/your-repo-link",
+        name: "Haven Hotel & Suites: A Hotel Booking Website",
+        description: "A responsive and interactive website showcasing luxurious hotel services, amenities, and rooms to provide an exceptional online experience for users.",
+        image: hotel,
+        liveLink: "https://haven-hotel-and-suites.web.app",
+        repoLink: "https://github.com/programming-hero-web-course2/b10a11-client-side-mdhasanshuvo",
     },
     {
-        name: "Project Two",
-        description: "A brief description of your second project goes here. Explain what makes this project unique or challenging.",
-        image: "https://via.placeholder.com/300x200", // Replace with your project image URL
-        liveLink: "https://your-live-project-link.com",
-        repoLink: "https://github.com/your-repo-link",
+        name: "Taalam Arabia: Vocabulary Learning App",
+        description: "A web-based application designed to help users learn Arabic vocabulary through structured lessons, interactive tutorials, and a personalized learning experience.",
+        image: taalam,
+        liveLink: "https://taalam-arabia.netlify.app",
+        repoLink: "https://github.com/programming-hero-web-course1/b10-a9-authentication-mdhasanshuvo",
     },
     {
-        name: "Project Three",
-        description: "A brief description of your third project goes here. Share key features or technologies that were used in this project.",
-        image: "https://via.placeholder.com/300x200", // Replace with your project image URL
-        liveLink: "https://your-live-project-link.com",
-        repoLink: "https://github.com/your-repo-link",
+        name: "Visarena: Visa Navigator Portal",
+        description: "A modern web application that simplifies the visa application process, offering features like requirement checks, application submission, and real-time tracking for hassle-free international travel.",
+        image: visa,
+        liveLink: "https://visarena-auth.web.app",
+        repoLink: "https://github.com/programming-hero-web-course2/b10-a10-client-side-mdhasanshuvo",
     },
 ];
 
 const Projects = () => {
     return (
-        <div className="py-16 px-8 bg-gradient-to-r from-blue-100 via-purple-200 to-pink-100">
-            <div className="max-w-6xl mx-auto">
+        <div id="projects"  className="py-16 sm:py-24 lg:py-32 px-8 bg-gradient-to-r from-blue-100 via-purple-200 to-pink-100">
+            <div className="max-w-7xl mx-auto">
                 {/* Heading */}
                 <h2 className="text-center text-4xl font-bold mb-10">My Projects</h2>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
@@ -42,11 +45,18 @@ const Projects = () => {
                             whileHover={{ scale: 1.05 }}
                         >
                             {/* Project Image */}
-                            <div className="relative">
-                                <img
+                            <div className="relative h-96 overflow-hidden">
+                                <motion.img
                                     src={project.image}
                                     alt={project.name}
-                                    className="w-full h-64 object-cover group-hover:opacity-80 transition-all duration-300"
+                                    className="w-full object-cover"
+                                    initial={{ y: 0 }}
+                                    animate={{ y: [-100, 0, -400] }} 
+                                    transition={{
+                                        duration: 8, // Duration of animation
+                                        repeat: Infinity, // Infinite loop
+                                        ease: "linear", // Smooth scrolling
+                                    }}
                                 />
                                 <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="flex justify-center items-center h-full">

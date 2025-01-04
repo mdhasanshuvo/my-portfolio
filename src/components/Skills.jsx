@@ -17,14 +17,14 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-100 via-blue-50 to-pink-100 py-16 px-8">
-      <div className="max-w-6xl mx-auto">
+    <div id="skills"  className="bg-gradient-to-r from-purple-100 via-blue-50 to-pink-100 py-16  sm:py-24 px-8">
+      <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-center text-4xl font-bold mb-10">My Skills</h2>
         
         {/* Skills Grid */}
         <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8"
           initial="hidden"
           animate="visible"
           variants={{
