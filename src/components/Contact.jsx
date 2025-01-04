@@ -25,15 +25,17 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Replace with your EmailJS credentials
+    // Send email using EmailJS
     emailjs
-      .sendForm('service_r5d4d88', 'template_r3nphi8', e.target, 'BBr-2VAVX6wsfuZyv4OYL')
+      .sendForm('service_r5d4d88', 'template_r3nphi8', e.target, 'u7QzAaotN2-UYS2W2')
       .then(
         (result) => {
+          console.log('Success:', result.text); // Debugging success
           setStatus('Message Sent!');
           setFormData({ name: '', email: '', message: '' });
         },
         (error) => {
+          console.error('Error:', error.text); // Debugging error
           setStatus('Something went wrong, please try again later.');
         }
       );
@@ -46,7 +48,7 @@ const Contact = () => {
         <h2 className="text-center text-4xl font-bold text-gray-800 mb-10">Contact Me</h2>
 
         {/* Contact Form */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-14">
           <motion.div
             className="bg-white p-8 rounded-lg shadow-xl"
             whileHover={{ opacity: 0.9 }}
@@ -111,7 +113,7 @@ const Contact = () => {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <FaEnvelope className="text-2xl mr-4 text-gray-600" />
-                <a href="mailto:mohammedhasan.contact@gmail.com" className="text-lg text-blue-500 hover:underline">
+                <a href="mailto:mohammedhasan.contact@gmail.com" className="sm:text-lg text-blue-500 hover:underline text-base">
                   mohammedhasan.contact@gmail.com
                 </a>
               </li>

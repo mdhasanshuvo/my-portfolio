@@ -88,8 +88,7 @@ const Banner = () => {
           <a
             href="https://drive.google.com/file/d/1DUrlguUIQM0Qg20KN4dqKtL33PHPCIf3/view?usp=sharing"
             target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary btn-lg shadow-md transform transition hover:scale-105"
+            className="btn btn-primary btn-lg shadow-md transform transition hover:scale-105"  
           >
             Download Resume
           </a>

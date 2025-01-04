@@ -5,7 +5,7 @@ const Nav = () => {
     const menuItems = (
         <>
             <li>
-                <Link to="home" smooth={true} duration={500} className="cursor-pointer">
+                <Link to="/" smooth={true} duration={500} className="cursor-pointer">
                     Home
                 </Link>
             </li>
@@ -15,17 +15,17 @@ const Nav = () => {
                 </Link>
             </li>
             <li>
-                <Link to="skills" smooth={true} duration={500} className="cursor-pointer"  offset={-70}>
+                <Link to="skills" smooth={true} duration={500} className="cursor-pointer" offset={-70}>
                     Skills
                 </Link>
             </li>
             <li>
-                <Link to="projects" smooth={true} duration={500} className="cursor-pointer"  offset={-70}>
+                <Link to="projects" smooth={true} duration={500} className="cursor-pointer" offset={-70}>
                     Projects
                 </Link>
             </li>
             <li>
-                <Link to="contact" smooth={true} duration={500} className="cursor-pointer"  offset={-70}>
+                <Link to="contact" smooth={true} duration={500} className="cursor-pointer" offset={-70}>
                     Contact
                 </Link>
             </li>
@@ -33,7 +33,7 @@ const Nav = () => {
     );
 
     return (
-        <div className="sticky top-0 z-500 bg-base-100 shadow-md">
+        <div className="bg-base-100 shadow-md">
             {/* Max width container */}
             <div className="max-w-7xl mx-auto">
                 <div className="navbar">

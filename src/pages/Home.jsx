@@ -10,7 +10,7 @@ import Contact from '../components/Contact';
 const Home = () => {
     return (
         <div>
-            <header>
+            <header className='sticky top-0 z-50'>
                 <Nav></Nav>
             </header>
 
