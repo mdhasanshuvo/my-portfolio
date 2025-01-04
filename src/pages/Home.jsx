@@ -2,6 +2,8 @@ import React from 'react';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
+import AboutMe from '../components/AboutMe';
+import Skills from '../components/Skills';
 
 const Home = () => {
     return (
@@ -12,6 +14,8 @@ const Home = () => {
 
             <main>
                 <Banner></Banner>
+                <AboutMe></AboutMe>
+                {/* <Skills></Skills> */}
             </main>
 
             <footer>
