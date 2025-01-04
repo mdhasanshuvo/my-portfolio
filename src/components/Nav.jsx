@@ -35,7 +35,7 @@ const Nav = () => {
                             {list}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl font-bold text-primary">Mohammed Hasan</a>
+                    <a className="btn btn-ghost text-base sm:text-xl font-bold text-primary">Mohammed Hasan</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -43,7 +43,7 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className='btn btn-primary'>Download Resume</button>
+                    <button className='btn btn-primary transform transition hover:scale-105 p-2 sm:p-4'>Download Resume</button>
                 </div>
             </div>
         </div>
