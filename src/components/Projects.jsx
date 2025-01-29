@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import hotel from '../assets/hotel-website.png';
-import taalam from '../assets/taalam.png';
+import tech from '../assets/Tech.png';
 import visa from '../assets/visa.png';
 
 const projects = [
@@ -14,12 +14,12 @@ const projects = [
         repoLink: "https://github.com/programming-hero-web-course2/b10a11-client-side-mdhasanshuvo",
     },
     {
-        name: "Taalam Arabia: Vocabulary Learning App",
-        description: "A web-based application designed to help users learn Arabic vocabulary through structured lessons, interactive tutorials, and a personalized learning experience.",
-        image: taalam,
-        liveLink: "https://taalam-arabia.netlify.app",
-        repoLink: "https://github.com/programming-hero-web-course1/b10-a9-authentication-mdhasanshuvo",
-    },
+        name: "Tech Discovery",
+        description: "A product discovery platform inspired by Product Hunt, allowing users to explore, upvote, and review tech products with role-based access, secure authentication, and a membership subscription system.",
+        image: tech, 
+        liveLink: "https://tech-discovery-auth.web.app", 
+        repoLink: "https://github.com/mdhasanshuvo/tech-discovery-client", 
+    },    
     {
         name: "Visarena: Visa Navigator Portal",
         description: "A modern web application that simplifies the visa application process, offering features like requirement checks, application submission, and real-time tracking for hassle-free international travel.",
@@ -31,7 +31,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div id="projects"  className="py-16 sm:py-24 lg:py-32 px-8 bg-gradient-to-r from-blue-100 via-purple-200 to-pink-100">
+        <div id="projects" className="py-16 sm:py-24 lg:py-32 px-8 bg-gradient-to-r from-blue-100 via-purple-200 to-pink-100">
             <div className="max-w-7xl mx-auto">
                 {/* Heading */}
                 <h2 className="text-center text-4xl font-bold mb-10">My Projects</h2>
@@ -51,7 +51,7 @@ const Projects = () => {
                                     alt={project.name}
                                     className="w-full object-cover"
                                     initial={{ y: 0 }}
-                                    animate={{ y: [-100, 0, -400] }} 
+                                    animate={{ y: [-100, 0, -400] }}
                                     transition={{
                                         duration: 8, // Duration of animation
                                         repeat: Infinity, // Infinite loop
