@@ -79,7 +79,7 @@ const Nav = () => {
                     {/* Navbar End */}
                     <div className="navbar-end">
                         <a
-                            href="https://drive.google.com/file/d/1DUrlguUIQM0Qg20KN4dqKtL33PHPCIf3/view?usp=sharing"
+                            href="https://shorturl.at/9Tumj"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

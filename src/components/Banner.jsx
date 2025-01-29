@@ -86,7 +86,7 @@ const Banner = () => {
           </div>
 
           <a
-            href="https://drive.google.com/file/d/1DUrlguUIQM0Qg20KN4dqKtL33PHPCIf3/view?usp=sharing"
+            href="https://shorturl.at/9Tumj"
             target="_blank"
             className="btn btn-primary btn-lg shadow-md transform transition hover:scale-105"  
           >
