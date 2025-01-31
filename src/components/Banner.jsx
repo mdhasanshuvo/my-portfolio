@@ -56,7 +56,7 @@ const Banner = () => {
             >
               <FaGithub />
             </a>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/mohammed-hasan-729701275"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +64,7 @@ const Banner = () => {
               aria-label="LinkedIn"
             >
               <FaLinkedin />
-            </a>
+            </a> */}
             <a
               href="https://www.facebook.com/hasanshuvoo"
               target="_blank"
@@ -86,7 +86,7 @@ const Banner = () => {
           </div>
 
           <a
-            href="https://shorturl.at/9Tumj"
+            href="https://drive.google.com/file/d/1oNpF_XZnrMxmLaxLiyFHxsn6TqDxCW6L/view?usp=sharing"
             target="_blank"
             className="btn btn-primary btn-lg shadow-md transform transition hover:scale-105"  
           >
