@@ -64,12 +64,38 @@ const Projects = () => {
                             whileHover={{ scale: 1.05 }}
                         >
                             {/* Project Image */}
-                            <div className={`relative ${project.isLongImage ? 'h-48 sm:h-56 md:h-64' : 'h-40 sm:h-48 md:h-56'} overflow-hidden bg-gray-100`}>
+                            <div className={`relative ${project.isLongImage ? 'h-48 sm:h-56 md:h-64' : 'h-40 sm:h-48 md:h-56'} overflow-hidden bg-gray-100 group`}>
                                 <img 
                                     src={project.image} 
                                     alt={project.name}
                                     className={`w-full ${project.isLongImage ? 'h-auto object-top hover:object-bottom transition-all duration-[3000ms] ease-linear' : 'h-full object-cover'}`}
                                 />
+                                
+                                {/* Hover Overlay with Icons */}
+                                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+                                    {(project.links.live || project.links.overview) && (
+                                        <a
+                                            href={project.links.live || project.links.overview}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-white bg-opacity-90 text-blue-600 p-2.5 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                                            title="View Live Site"
+                                        >
+                                            <FaExternalLinkAlt className="text-lg" />
+                                        </a>
+                                    )}
+                                    {(project.links.client || project.links.server) && (
+                                        <a
+                                            href={project.links.client || project.links.server}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-white bg-opacity-90 text-gray-800 p-2.5 rounded-lg hover:bg-gray-800 hover:text-white transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                                            title="View on GitHub"
+                                        >
+                                            <FaGithub className="text-lg" />
+                                        </a>
+                                    )}
+                                </div>
                             </div>
 
                             {/* Project Details */}
