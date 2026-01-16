@@ -60,7 +60,7 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300"
+                            className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 flex flex-col h-full"
                             whileHover={{ scale: 1.05 }}
                         >
                             {/* Project Image */}
@@ -99,7 +99,7 @@ const Projects = () => {
                             </div>
 
                             {/* Project Details */}
-                            <div className="p-4 sm:p-6">
+                            <div className="p-4 sm:p-6 flex flex-col flex-grow">
                                 <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-blue-600">{project.name}</h3>
                                 <p className="text-sm sm:text-base text-gray-700 mb-4">{project.description}</p>
                                 
@@ -121,13 +121,13 @@ const Projects = () => {
                                 </div>
 
                                 {/* Impact */}
-                                <div className="mb-6">
+                                <div className="mb-6 flex-grow">
                                     <span className="font-semibold text-gray-800">Impact:</span> 
                                     <p className="text-gray-700 text-sm mt-1">{project.impact}</p>
                                 </div>
 
                                 {/* Links */}
-                                <div className="flex flex-wrap gap-3 text-sm">
+                                <div className="flex flex-wrap gap-3 text-sm mt-auto">
                                     {project.links.live && (
                                         <a
                                             href={project.links.live}
