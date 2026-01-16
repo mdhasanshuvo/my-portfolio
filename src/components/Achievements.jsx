@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaMedal, FaTrophy, FaAward, FaTimes, FaFileAlt } from 'react-icons/fa';
+import { FaMedal, FaTrophy, FaAward, FaTimes, FaEye } from 'react-icons/fa';
 
 const achievements = [
     {
@@ -83,7 +83,7 @@ const Achievements = () => {
                     {achievements.map((achievement, index) => (
                         <motion.div
                             key={index}
-                            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
+                            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full relative"
                             whileHover={{ scale: 1.05 }}
                         >
                             <div className={`${achievement.color} text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl mb-4 shadow-lg`}>
@@ -93,15 +93,16 @@ const Achievements = () => {
                             {achievement.organization && (
                                 <p className="text-gray-600 text-sm mb-4">{achievement.organization}</p>
                             )}
-                            {/* View Certificate Button */}
-                            <button
+                            {/* View Certificate Icon */}
+                            <motion.button
                                 onClick={() => openCertificate(achievement)}
-                                className="mt-auto inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-300 text-sm"
+                                className="absolute top-3 right-3 bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
                                 title="Click to view certificate"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.9 }}
                             >
-                                <FaFileAlt className="text-lg" />
-                                View Certificate
-                            </button>
+                                <FaEye className="text-lg" />
+                            </motion.button>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -156,29 +157,6 @@ const Achievements = () => {
                         </motion.div>
                     )}
                 </AnimatePresence>
-
-                {/* Additional Info Section */}
-                <div className="mt-16 bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-6">Extracurricular Activities</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <h4 className="font-bold text-blue-600 mb-3">Teaching & Leadership</h4>
-                            <ul className="text-gray-700 space-y-2">
-                                <li>• Teaching Assistant at IIUC - Web Development Tools (CSE-3532)</li>
-                                <li>• System Design - IIUC Transport Management Division</li>
-                                <li>• Web Secretary - IIUC Competitive Programming Society</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-bold text-blue-600 mb-3">Competitive Programming</h4>
-                            <ul className="text-gray-700 space-y-2">
-                                <li>• Solved 200+ problems across various platforms</li>
-                                <li>• Participated in 10+ online and offline contests</li>
-                                <li>• Active member of competitive programming community</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );
