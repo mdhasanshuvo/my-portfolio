@@ -115,37 +115,37 @@ const Contact = () => {
 
           {/* Contact Information */}
           <motion.div
-            className="bg-white p-8 rounded-lg shadow-xl"
+            className="bg-white p-6 sm:p-8 rounded-lg shadow-xl"
             whileHover={{ opacity: 0.9 }}
           >
             <h3 className="text-2xl font-semibold text-gray-700 mb-6">Contact Info</h3>
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <FaEnvelope className="text-2xl mr-4 text-gray-600" />
-                <a href="mailto:mohammedhasan.contact@gmail.com" className="sm:text-lg text-blue-500 hover:underline text-base">
+            <ul className="space-y-4 sm:space-y-6">
+              <li className="flex items-start sm:items-center gap-3 sm:gap-4">
+                <FaEnvelope className="text-lg sm:text-2xl flex-shrink-0 text-gray-600 sm:mt-0" />
+                <a href="mailto:mohammedhasan.contact@gmail.com" className="text-sm sm:text-lg text-blue-500 hover:underline break-all">
                   mohammedhasan.contact@gmail.com
                 </a>
               </li>
-              <li className="flex items-center">
-                <FaPhoneAlt className="text-2xl mr-4 text-gray-600" />
-                <a href="tel:+8801516556649" className="text-lg text-blue-500 hover:underline">
+              <li className="flex items-center gap-3 sm:gap-4">
+                <FaPhoneAlt className="text-xl sm:text-2xl flex-shrink-0 text-gray-600" />
+                <a href="tel:+8801516556649" className="text-base sm:text-lg text-blue-500 hover:underline">
                   +880 1516 556649
                 </a>
               </li>
-              <li className="flex items-center">
-                <FaWhatsapp className="text-2xl mr-4 text-green-500" />
+              <li className="flex items-center gap-3 sm:gap-4">
+                <FaWhatsapp className="text-xl sm:text-2xl flex-shrink-0 text-green-500" />
                 <a
                   href="https://wa.me/8801309735145"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-lg text-green-500 hover:underline"
+                  className="text-base sm:text-lg text-green-500 hover:underline"
                 >
                   WhatsApp
                 </a>
               </li>
-              <li className="flex items-center">
-                <span className="text-2xl mr-4">📍</span>
-                <span className="text-lg text-gray-600">Chittagong, Bangladesh</span>
+              <li className="flex items-center gap-3 sm:gap-4">
+                <span className="text-xl sm:text-2xl flex-shrink-0">📍</span>
+                <span className="text-base sm:text-lg text-gray-600">Chittagong, Bangladesh</span>
               </li>
             </ul>
           </motion.div>
