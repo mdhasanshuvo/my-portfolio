@@ -5,6 +5,7 @@ import Banner from '../components/Banner';
 import AboutMe from '../components/AboutMe';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Achievements from '../components/Achievements';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
                 <AboutMe></AboutMe>
                 <Skills></Skills>
                 <Projects></Projects>
+                <Achievements></Achievements>
                 <Contact></Contact>
             </main>
 

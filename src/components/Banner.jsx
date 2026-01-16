@@ -12,24 +12,23 @@ const Banner = () => {
           <img
             src={hasan}
             alt="Mohammed Hasan"
-            className="rounded-full w-64 h-64 object-cover shadow-lg"
+            className="rounded-full w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover shadow-lg"
           />
         </div>
 
         {/* Right Section: Text */}
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Hello, I'm <span className="text-yellow-400">Mohammed Hasan</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-6">
-            <span>I specialize in </span>
+          <p className="text-lg sm:text-xl md:text-2xl mb-6">
+            <span>I'm a </span>
             <span className="text-yellow-300">
               <Typewriter
                 words={[
-                  'Frontend Development',
-                  'React.js Applications',
-                  'Tailwind CSS Designs',
-                  'Modern UI/UX',
+                  'Full Stack Engineer',
+                  'SaaS Developer',
+                  'Backend Specialist',
                 ]}
                 loop
                 cursor
@@ -40,9 +39,8 @@ const Banner = () => {
               />
             </span>
           </p>
-          <p className="text-lg md:text-xl mb-6">
-            On a mission to build engaging and user-friendly websites while
-            continuously learning and growing in web development.
+          <p className="text-base sm:text-lg md:text-xl mb-6">
+            Full Stack Engineer building scalable SaaS platforms with expertise in system architecture. Leading Pocket Boss, an AI-powered CRM for multiple industries.
           </p>
 
           {/* Social Links */}
@@ -56,23 +54,14 @@ const Banner = () => {
             >
               <FaGithub />
             </a>
-            {/* <a
-              href="https://www.linkedin.com/in/mohammed-hasan-729701275"
+            <a
+              href="https://www.linkedin.com/in/mohammedd-hasan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-yellow-300 text-2xl transition"
               aria-label="LinkedIn"
             >
               <FaLinkedin />
-            </a> */}
-            <a
-              href="https://www.facebook.com/hasanshuvoo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-yellow-300 text-2xl transition"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
             </a>
             <a
               href="https://www.facebook.com/hasanshuvoo"
@@ -86,14 +75,12 @@ const Banner = () => {
           </div>
 
           <a
-            href="https://drive.google.com/file/d/1MM3mEo8vaoIY2YuDNIDp8nv0DA08RiSQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/10LUIx1tNfPZnOzhnQ3Nac3ZxlcC2ItgU/view?usp=sharing"
             target="_blank"
             className="btn btn-primary btn-lg shadow-md transform transition hover:scale-105"  
           >
             Download Resume
           </a>
-
-
         </div>
       </div>
     </div>

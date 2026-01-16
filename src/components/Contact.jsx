@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import Swal from 'sweetalert2';  // Import SweetAlert2
+import Swal from 'sweetalert2';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,6 @@ const Contact = () => {
     message: '',
   });
 
-  // Handle form data changes
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -20,19 +19,16 @@ const Contact = () => {
     }));
   };
 
-  // Send email via EmailJS
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send email using EmailJS
     emailjs
-      .sendForm('service_r5d4d88', 'template_r3nphi8', e.target, 'u7QzAaotN2-UYS2W2')
+      .sendForm('service_122e0vb', 'template_r3nphi8', e.target, 'UsUo6jTp6zZuHA7Q_')
       .then(
         (result) => {
-          console.log('Success:', result.text); // Debugging success
+          console.log('Success:', result.text);
           setFormData({ name: '', email: '', message: '' });
 
-          // SweetAlert success
           Swal.fire({
             title: 'Success!',
             text: 'Your message has been sent successfully.',
@@ -42,15 +38,14 @@ const Contact = () => {
           });
         },
         (error) => {
-          console.error('Error:', error.text); // Debugging error
+          console.error('Error:', error.text);
 
-          // SweetAlert error
           Swal.fire({
             title: 'Oops!',
             text: 'Something went wrong, please try again later.',
             icon: 'error',
             confirmButtonText: 'OK',
-            confirmButtonColor: '#f44336',
+            confirmButtonColor: '#f44336'
           });
         }
       );
@@ -133,8 +128,8 @@ const Contact = () => {
               </li>
               <li className="flex items-center">
                 <FaPhoneAlt className="text-2xl mr-4 text-gray-600" />
-                <a href="tel:+8801756147000" className="text-lg text-blue-500 hover:underline">
-                  +880 1309 735145
+                <a href="tel:+8801516556649" className="text-lg text-blue-500 hover:underline">
+                  +880 1516 556649
                 </a>
               </li>
               <li className="flex items-center">

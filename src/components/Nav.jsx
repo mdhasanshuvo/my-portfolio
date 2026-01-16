@@ -25,6 +25,11 @@ const Nav = () => {
                 </Link>
             </li>
             <li>
+                <Link to="achievements" smooth={true} duration={500} className="cursor-pointer" offset={-70}>
+                    Achievements
+                </Link>
+            </li>
+            <li>
                 <Link to="contact" smooth={true} duration={500} className="cursor-pointer" offset={-70}>
                     Contact
                 </Link>
@@ -79,7 +84,7 @@ const Nav = () => {
                     {/* Navbar End */}
                     <div className="navbar-end">
                         <a
-                            href="https://drive.google.com/file/d/1MM3mEo8vaoIY2YuDNIDp8nv0DA08RiSQ/view?usp=sharing"
+                            href="https://drive.google.com/file/d/10LUIx1tNfPZnOzhnQ3Nac3ZxlcC2ItgU/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
